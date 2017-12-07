@@ -46,9 +46,9 @@ nav.topnav {
     overflow: hidden;
     background-color: white;
 }
-.topnav ul {
+nav.topnav ul {
     list-style-type: none;
-    margin: 10px;
+    margin: 0px;
     padding: 0px;
     overflow: hidden;
     background-color: #333;
