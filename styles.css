@@ -36,6 +36,9 @@ pre {
     font-weight: 400;
     line-height: 18.5667px;
 }
+
+
+
 nav.topnav {
     list-style-type: none;
     margin: 0;
@@ -43,9 +46,19 @@ nav.topnav {
     overflow: hidden;
     background-color: white;
 }
+.topnav ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #333;
+	width: 100%;
+}
+
 nav.topnav li {
   list-style-type: none;
-  float: left;
+  float: none;
+  color: white;
 }
 nav.topnav li a {
     display: block;
@@ -66,9 +79,6 @@ nav.topnav li a.active {
 
 
 
-nav.topnav li {
-    float: none;
-}
 /*
   - this applies to any screen sizes under 500px
   - if you leave the width off, sections will automatically fill the full page width
@@ -99,6 +109,23 @@ nav.topnav li a {
 nav.topnav li a:hover {
   background-color: #111;
 }
+
+.articlecarousel { 
+  position: relative; 
+  top: -1px; 
+  left: 100px; 
+  right: -100px; 
+  bottom: 1px; 
+  height: 500px; 
+  width: 230px; 
+  padding: 15px 15px 15px 15px; 
+  margin: 40px 100px 0px auto; 
+  display: block; 
+  background: rgba(255, 255, 255, 1.0); 
+  color: rgba(0, 0, 0, 1.0); 
+  border: solid black 1px;
+}
+
 /* 
 - applies to screens larger than 499px (unless specifically overwritten these styles will also apply to screens larger than 999px)
 - add any hover states here
@@ -134,6 +161,23 @@ nav.topnav li a {
 nav.topnav li a:hover {
   background-color: #111;
 }
+
+.articlecarousel { 
+  position: relative; 
+  top: -1px; 
+  left: 100px; 
+  right: -100px; 
+  bottom: 1px; 
+  height: 500px; 
+  width: 230px; 
+  padding: 15px 15px 15px 15px; 
+  margin: 40px 100px 0px auto; 
+  display: block; 
+  background: rgba(255, 255, 255, 1.0); 
+  color: rgba(0, 0, 0, 1.0); 
+  border: solid black 1px;
+}
+
 /*
 - applies to screens larger than 999px only
 - add a max-width to your main section
