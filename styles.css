@@ -75,10 +75,6 @@ nav.topnav li a.active {
 	
 }
 
-
-
-
-
 /*
   - this applies to any screen sizes under 500px
   - if you leave the width off, sections will automatically fill the full page width
@@ -101,7 +97,7 @@ nav.topnav li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 12px;
   text-decoration: none;
 }
 /* Change the link color to #111 (black) on hover */
@@ -110,11 +106,11 @@ nav.topnav li a:hover {
   background-color: #111;
 }
 
-.articlecarousel { 
+#headlinearticle { 
   position: relative; 
-  left: 100px; 
-  height: 500px; 
-  width: 230px; 
+  left: 2%; 
+  height: 150px; 
+  width: 440px; 
   padding: 15px 15px 15px 15px; 
   margin: 40px 100px 0px auto; 
   display: block; 
@@ -123,10 +119,58 @@ nav.topnav li a:hover {
   border: solid red 1px;
 }
 
+.articlecarousel { 
+  position: relative; 
+  left: 2%; 
+  height: 150px; 
+  width: 440px; 
+  padding: 15px 15px 15px 15px; 
+  margin: 15px 100px 0px auto; 
+  display: block; 
+  background: rgba(255, 255, 255, 1.0); 
+  color: black; 
+  border: solid red 1px;
+}
+
+.partnercontent { 
+  position: relative; 
+  bottom: -10px;
+  left: 2%;
+  height: 150px; 
+  width: 150px; 
+  background: white; 
+  color: black; 
+  border: black solid 1px;
+
+}
+
+.readersubs { 
+  position: relative; 
+  bottom: 152px;
+  left: 29%;
+  height: 150px; 
+  width: 150px; 
+  background: white; 
+  color: black; 
+  border: black solid 1px;
+  margin: 10px 8px 10px 10px;
+}
+
+.populararticles{ 
+  position: relative; 
+  bottom: 314px;
+  left: 59%;
+  height: 150px; 
+  width: 150px; 
+  background: white; 
+  color: black; 
+  border: black solid 1px;
+
+}
+
 footer { 
-  position: fixed; 
+  position: relative; 
   top: 100%; 
-  bottom: 2%; 
   height: 50px; 
   width: 100%; 
   padding: 5px 0px 25px 0px;
@@ -137,39 +181,6 @@ footer {
   border: red solid 1px;
 }
 
-.partnercontent { 
-  position: relative; 
-  bottom: 100px;
-  left: 30px;
-  height: 150px; 
-  width: 150px; 
-  background: white; 
-  color: black; 
-  border: black solid 1px;
-}
-
-.readersubs { 
-  position: relative; 
-  bottom: 100px;
-  left: 170px;
-  height: 150px; 
-  width: 150px; 
-  background: white; 
-  color: black; 
-  border: black solid 1px;
-}
-
-.populararticles{ 
-  position: relative; 
-  bottom: 100px;
-  left: 270px;
-  height: 150px; 
-  width: 150px; 
-  background: white; 
-  color: black; 
-  border: black solid 1px;
-}
-
 /* 
 - applies to screens larger than 499px (unless specifically overwritten these styles will also apply to screens larger than 999px)
 - add any hover states here
@@ -178,8 +189,8 @@ footer {
 - decrease width of sections
 - add `display: inline-block;` so that sections will float next to each other
 */
-}
 /* END FIRST BREAKPOINT */
+}
 /* SECOND BREAKPOINT (DESKTOP SIZE) */
 
 @media screen and (min-width: 1000px) {
