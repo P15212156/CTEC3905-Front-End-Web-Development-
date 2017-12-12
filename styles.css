@@ -1,19 +1,21 @@
 /* GLOBAL AND MOBILE STYLES FIRST */
-
 body {
-    font-family: Futura, Trebuchet MS, Arial, sans-serif;
-    font-style: normal;
-    font-variant: normal;
-	width: autopx; 
-	height: autopx;
-	background-color: white;
-	padding;
-	margin: 0;
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  width: autopx; 
+  height: autopx;
+  background-color: white;
+  
+  background-image: url("images/darkdots.png");
+
 }
+
 h1 {
     font-size: 1.5em;
     font-weight: 700;
     line-height: 26.4px;
+	color: white;
 }
 h3 {
     font-size: 0.875em;
@@ -37,10 +39,9 @@ pre {
 }
 
 
+
 nav.topnav {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     background-color: white;
 }
@@ -74,6 +75,88 @@ nav.topnav li a.active {
   background-color: blue;
 	
 }
+
+#headlinearticle { 
+  position: relative; 
+  height: 450px; 
+  width: 433px; 
+  padding: 2px 10px 2px 10px; 
+  margin: 15px 100px 0px auto; 
+  display: block; 
+  background: white;
+  color: black; 
+  border: solid red 1px;
+  display: inline-block;
+}
+
+.articlecarousel { 
+  position: relative; 
+  height: 350px; 
+  width: 433px; 
+  padding: 2px 10px 2px 10px; 
+  margin: 15px 100px 0px auto; 
+  display: block; 
+  background: white;
+  color: black; 
+  border: solid red 1px;
+  display: inline-block;
+}
+
+.partnercontent { 
+  position: relative; 
+  height: 150px; 
+  width: 433px; 
+  padding: 2px 10px 2px 10px; 
+  margin: 15px 100px 0px auto; 
+  display: block; 
+  background: white;
+  color: black; 
+  border: solid red 1px;
+  display: inline-block;
+
+}
+
+.readersubs { 
+  position: relative; 
+  height: 150px; 
+  width: 433px; 
+  padding: 2px 10px 2px 10px; 
+  margin: 15px 100px 0px auto; 
+  display: block; 
+  background: white;
+  color: black; 
+  border: solid red 1px;
+  display: inline-block;
+}
+
+.populararticles{ 
+  position: relative; 
+  height: 150px; 
+  width: 433px; 
+  padding: 2px 10px 2px 10px; 
+  margin: 15px 100px 0px auto; 
+  display: block; 
+  background: rgba(255, 255, 255, 1.0); 
+  color: black; 
+  border: solid red 1px;
+  display: inline-block;
+
+}
+
+footer {
+  position: relative; 
+  height: 50px; 
+  width: 433px; 
+  padding: 2px 10px 10px 10px; 
+  margin: 15px 100px 0px auto; 
+  display: block; 
+  background: rgba(255, 255, 255, 1.0); 
+  color: black; 
+  border: solid red 1px;
+  display: inline-block;
+  overflow: hidden;
+}
+
 
 /*
   - this applies to any screen sizes under 500px
@@ -110,26 +193,31 @@ nav.topnav li a:hover {
   position: relative; 
   left: 2%; 
   height: 150px; 
-  width: 440px; 
+  width: 500px; 
   padding: 15px 15px 15px 15px; 
   margin: 40px 100px 0px auto; 
   display: block; 
   background: rgba(255, 255, 255, 1.0); 
   color: black; 
   border: solid red 1px;
+  
+
 }
 
 .articlecarousel { 
   position: relative; 
   left: 2%; 
   height: 150px; 
-  width: 440px; 
+  width: 500px; 
   padding: 15px 15px 15px 15px; 
   margin: 15px 100px 0px auto; 
   display: block; 
   background: rgba(255, 255, 255, 1.0); 
   color: black; 
   border: solid red 1px;
+  
+  display: inline-block;
+
 }
 
 .partnercontent { 
@@ -141,38 +229,42 @@ nav.topnav li a:hover {
   background: white; 
   color: black; 
   border: black solid 1px;
+  display: inline-block;
 
 }
 
 .readersubs { 
   position: relative; 
-  bottom: 152px;
-  left: 29%;
+  bottom: -10px;
+  left: 2%;
   height: 150px; 
   width: 150px; 
   background: white; 
   color: black; 
   border: black solid 1px;
   margin: 10px 8px 10px 10px;
+  display: inline-block;
 }
 
 .populararticles{ 
   position: relative; 
-  bottom: 314px;
-  left: 59%;
+  bottom: -10px;
+  left: 2%;
   height: 150px; 
   width: 150px; 
   background: white; 
   color: black; 
   border: black solid 1px;
+  display: inline-block;
 
 }
 
 footer { 
-  position: relative; 
+  position: absolute; 
   top: 100%; 
+  left: 2%;
   height: 50px; 
-  width: 100%; 
+  width: 500px 
   padding: 5px 0px 25px 0px;
   margin: -36px auto 0px auto; 
   display: block; 
@@ -238,8 +330,8 @@ footer {
   top: 100%; 
   bottom: 2%; 
   height: 50px; 
-  width: 100%; 
-  padding: 5px 0px 25px 0px; 
+  width: 750px; 
+
   margin: -36px auto 0px auto; 
   display: block; 
   background: rgba(255, 255, 255, 1.0); 
