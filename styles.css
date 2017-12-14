@@ -15,17 +15,27 @@ h1 {
     font-size: 1.5em;
     font-weight: 700;
     line-height: 26.4px;
-	color: white;
+	color: #1300BF;
 }
+
+h2 {
+	font-size: 1.0em;
+	font-weight: 600;
+	line-height: 19.4px;
+	color: #060040;
+}
+
 h3 {
     font-size: 0.875em;
     font-weight: 500;
     line-height: 15.4px;
+	color: #B6ABBF;
 }
 p {
     font-size: 0.875em;
     font-weight: 400;
     line-height: 20px;
+	color: #F3E3FF;
 }
 blockquote {
     font-size: 1.313em;
@@ -43,21 +53,20 @@ pre {
 nav.topnav {
     list-style-type: none;
     overflow: hidden;
-    background-color: white;
 }
 nav.topnav ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
     overflow: hidden;
-    background-color: #333;
+    background: none;
 	width: 100%;
 }
 
 nav.topnav li {
   list-style-type: none;
   float: none;
-  color: white;
+
 }
 nav.topnav li a {
     display: block;
@@ -83,9 +92,7 @@ nav.topnav li a.active {
   padding: 2px 10px 2px 10px; 
   margin: 15px 100px 0px auto; 
   display: block; 
-  background: white;
   color: black; 
-  border: solid red 1px;
   display: inline-block;
 }
 
@@ -96,9 +103,8 @@ nav.topnav li a.active {
   padding: 2px 10px 2px 10px; 
   margin: 15px 100px 0px auto; 
   display: block; 
-  background: white;
+  background: #3D3940;
   color: black; 
-  border: solid red 1px;
   display: inline-block;
 }
 
@@ -109,9 +115,8 @@ nav.topnav li a.active {
   padding: 2px 10px 2px 10px; 
   margin: 15px 100px 0px auto; 
   display: block; 
-  background: white;
+  background: #555059;
   color: black; 
-  border: solid red 1px;
   display: inline-block;
 
 }
@@ -123,9 +128,8 @@ nav.topnav li a.active {
   padding: 2px 10px 2px 10px; 
   margin: 15px 100px 0px auto; 
   display: block; 
-  background: white;
+  background: #7C7482;
   color: black; 
-  border: solid red 1px;
   display: inline-block;
 }
 
@@ -136,9 +140,8 @@ nav.topnav li a.active {
   padding: 2px 10px 2px 10px; 
   margin: 15px 100px 0px auto; 
   display: block; 
-  background: rgba(255, 255, 255, 1.0); 
+  background: #A398AB; 
   color: black; 
-  border: solid red 1px;
   display: inline-block;
 
 }
@@ -150,9 +153,8 @@ footer {
   padding: 2px 10px 10px 10px; 
   margin: 15px 100px 0px auto; 
   display: block; 
-  background: rgba(255, 255, 255, 1.0); 
-  color: black; 
-  border: solid red 1px;
+  background: black; 
+  color: white; 
   display: inline-block;
   overflow: hidden;
 }
@@ -197,9 +199,7 @@ nav.topnav li a:hover {
   padding: 15px 15px 15px 15px; 
   margin: 40px 100px 0px auto; 
   display: block; 
-  background: rgba(255, 255, 255, 1.0); 
   color: black; 
-  border: solid red 1px;
   
 
 }
@@ -212,10 +212,7 @@ nav.topnav li a:hover {
   padding: 15px 15px 15px 15px; 
   margin: 15px 100px 0px auto; 
   display: block; 
-  background: rgba(255, 255, 255, 1.0); 
   color: black; 
-  border: solid red 1px;
-  
   display: inline-block;
 
 }
@@ -226,9 +223,7 @@ nav.topnav li a:hover {
   left: 2%;
   height: 150px; 
   width: 150px; 
-  background: white; 
   color: black; 
-  border: black solid 1px;
   display: inline-block;
 
 }
@@ -239,9 +234,7 @@ nav.topnav li a:hover {
   left: 2%;
   height: 150px; 
   width: 150px; 
-  background: white; 
   color: black; 
-  border: black solid 1px;
   margin: 10px 8px 10px 10px;
   display: inline-block;
 }
@@ -252,9 +245,7 @@ nav.topnav li a:hover {
   left: 2%;
   height: 150px; 
   width: 150px; 
-  background: white; 
   color: black; 
-  border: black solid 1px;
   display: inline-block;
 
 }
@@ -320,8 +311,6 @@ nav.topnav li a:hover {
   padding: 15px 15px 15px 15px; 
   margin: 40px 100px 0px auto; 
   display: block; 
-  background: rgba(255, 255, 255, 1.0); 
-  color: rgba(0, 0, 0, 1.0); 
   border: solid black 1px;
 }
 
@@ -334,8 +323,6 @@ footer {
 
   margin: -36px auto 0px auto; 
   display: block; 
-  background: rgba(255, 255, 255, 1.0); 
-  color: rgba(0, 0, 0, 1.0); 
   border: red solid 1px;
 }
 
