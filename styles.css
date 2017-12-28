@@ -48,19 +48,38 @@ pre {
     line-height: 18.5667px;
 }
 
+a.headbanner img{
+	height: 106px;
+	width:450px;
+	opacity: 0.75;
+}
 
+img.headlogo{
+	height: 175px;
+	width:175px;
+	opacity: 0.75;
+}
+
+a.authorspotlight img{
+	height: 175px;
+	width:175px;
+	opacity: 0.75;
+}
 
 nav.topnav {
-    list-style-type: none;
+    list-style-type: none;	
+	background-color: #333;
+	opacity: 0.85;
+	box-shadow: 0px 0px 19px 5px #000099FF;
     overflow: hidden;
 }
 nav.topnav ul {
     list-style-type: none;
-    margin: 0px;
-    padding: 0px;
     overflow: hidden;
     background: none;
 	width: 100%;
+	margin: 0px;
+	padding: 0px;
 }
 
 nav.topnav li {
@@ -75,13 +94,18 @@ nav.topnav li a {
     padding: 14px 16px;
     text-decoration: none;
 }
+
+
 nav.topnav li a:hover:not(.active) {
   
-  background-color: yellow;
+  background-color: grey;
+  font-weight: bold;
+
 	
 }
 nav.topnav li a.active {
-  background-color: blue;
+  background-color: #112051;
+  font-weight: bold;
 	
 }
 
@@ -94,6 +118,7 @@ nav.topnav li a.active {
   display: block; 
   color: black; 
   display: inline-block;
+  box-shadow: 5px 5px 6px 7px #000099FF; 
 }
 
 .articlecarousel { 
@@ -106,6 +131,8 @@ nav.topnav li a.active {
   background: #3D3940;
   color: black; 
   display: inline-block;
+  opacity: 0.75;
+  box-shadow: 0px 0px 19px 5px #000099FF;
 }
 
 .partnercontent { 
@@ -118,6 +145,7 @@ nav.topnav li a.active {
   background: #555059;
   color: black; 
   display: inline-block;
+  opacity: 0.75;
 
 }
 
@@ -131,6 +159,7 @@ nav.topnav li a.active {
   background: #7C7482;
   color: black; 
   display: inline-block;
+  opacity: 0.75;
 }
 
 .populararticles{ 
@@ -143,6 +172,7 @@ nav.topnav li a.active {
   background: #A398AB; 
   color: black; 
   display: inline-block;
+  opacity: 0.75;
 
 }
 
@@ -157,6 +187,8 @@ footer {
   color: white; 
   display: inline-block;
   overflow: hidden;
+  opacity: 0.75;
+  box-shadow: 0px 0px 19px 5px #000099FF;
 }
 
 
@@ -168,12 +200,22 @@ footer {
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 
 @media screen and (min-width: 500px) {
+	
+a.headimg img{
+  height: 175px;
+  width:714px;
+}
+
+img.headlogo{
+  height: 175px;
+  width:175px;
+}
+	
 nav.topnav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
 }
 nav.topnav li {
   float: left;
@@ -200,6 +242,7 @@ nav.topnav li a:hover {
   margin: 40px 100px 0px auto; 
   display: block; 
   color: black; 
+  display: inline-block;
   
 
 }
@@ -231,18 +274,19 @@ nav.topnav li a:hover {
 .readersubs { 
   position: relative; 
   bottom: -10px;
-  left: 2%;
+  left: -90px;
   height: 150px; 
   width: 150px; 
   color: black; 
-  margin: 10px 8px 10px 10px;
+  margin: 10px 8px 10px 8px;
   display: inline-block;
 }
 
 .populararticles{ 
   position: relative; 
-  bottom: -10px;
-  left: 2%;
+  bottom: 169px;
+  left: 385px;
+  margin-left: -10px;
   height: 150px; 
   width: 150px; 
   color: black; 
@@ -251,17 +295,16 @@ nav.topnav li a:hover {
 }
 
 footer { 
-  position: absolute; 
-  top: 100%; 
+  position: relative; 
+
   left: 2%;
   height: 50px; 
-  width: 500px 
+  width: 530px;
   padding: 5px 0px 25px 0px;
-  margin: -36px auto 0px auto; 
-  display: block; 
-  background: rgba(255, 255, 255, 1.0); 
-  color: rgba(0, 0, 0, 1.0); 
-  border: red solid 1px;
+  margin: -70px auto 0px auto; 
+  background-color: grey;
+  color: white; 
+  display: inline-block;
 }
 
 /* 
@@ -320,10 +363,8 @@ footer {
   bottom: 2%; 
   height: 50px; 
   width: 750px; 
-
   margin: -36px auto 0px auto; 
   display: block; 
-  border: red solid 1px;
 }
 
 /*
