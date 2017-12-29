@@ -28,7 +28,7 @@ h2 {
 	font-size: 1.0em;
 	font-weight: 600;
 	line-height: 19.4px;
-	color: #000099FF;
+	color: #0099FF;
 	background-color: grey;
 }
 
@@ -78,7 +78,7 @@ nav.topnav {
     list-style-type: none;	
 	background-color: #333;
 	opacity: 0.85;
-	box-shadow: 0px 0px 19px 5px #000099FF;
+	box-shadow: 0px 0px 19px 5px #0099FF;
     overflow: hidden;
 }
 nav.topnav ul {
@@ -127,7 +127,7 @@ nav.topnav li a.active {
   display: block; 
   color: black; 
   display: inline-block;
-  box-shadow: 5px 5px 6px 7px #000099FF; 
+  box-shadow: 5px 5px 6px 7px #0099FF; 
 }
 
 #headlinearticle h2 {
@@ -147,7 +147,7 @@ nav.topnav li a.active {
   column-count: 2;
   column-rule-style: solid;
   column-rule-width: 1px;
-  column-rule-color: #000099FF;
+  column-rule-color: #0099FF;
   overflow: hidden;	
   height: 380px;
   display: inline-block;
@@ -163,7 +163,7 @@ nav.topnav li a.active {
   display: block; 
   color: black; 
   display: inline-block;
-  box-shadow: 5px 5px 6px 7px #000099FF; 
+  box-shadow: 5px 5px 6px 7px #0099FF; 
 }
 
 #article h2 {
@@ -183,7 +183,7 @@ nav.topnav li a.active {
   column-count: 2;
   column-rule-style: solid;
   column-rule-width: 1px;
-  column-rule-color: #000099FF;
+  column-rule-color: #0099FF;
   overflow: hidden;	
   height: 380px;
   display: inline-block;
@@ -192,7 +192,26 @@ nav.topnav li a.active {
 
 .articlecarousel { 
   position: relative; 
-  height: 350px; 
+  height: 680px; 
+  width: 433px; 
+  padding: 2px 10px 2px 10px; 
+  margin: 15px 100px 200px auto; 
+  display: block; 
+  background: #3D3940;
+  color: black; 
+  display: inline-block;
+  opacity: 0.75;
+  box-shadow: 0px 0px 19px 5px #0099FF;
+}
+
+.articecarousel img{
+	width: 100px;
+	height: 75px;
+}
+
+.carouselarticlepage { 
+  position: relative; 
+  height: 680px; 
   width: 433px; 
   padding: 2px 10px 2px 10px; 
   margin: 15px 100px 0px auto; 
@@ -201,7 +220,55 @@ nav.topnav li a.active {
   color: black; 
   display: inline-block;
   opacity: 0.75;
-  box-shadow: 0px 0px 19px 5px #000099FF;
+  box-shadow: 0px 0px 19px 5px #0099FF;
+}
+
+.carouselarticlepage img{
+	width: 100px;
+	height: 75px;
+}
+
+#articles {
+  width: 400px;
+  height: 610px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 500px;
+}
+#articles div {
+  width: 600px;
+  height: 375px;
+
+  position: absolute;
+  top: 0;
+  left: -600px;
+  z-index: 1;
+  opacity: 1;
+
+}
+#articles div:target {
+  left: 0;
+  z-index: 9;
+  opacity: 1;
+}
+#articles div:first-child {
+  left: 0;
+  opacity: 1;
+}
+
+
+#divselect{
+	margin-left: 150px;
+}
+#divselect a {
+  text-decoration: none;
+  background: #E3F1FA;
+  border: 1px solid #C6E4F2;
+  padding: 4px 6px;
+  color: #222;
+}
+#divselect a:hover {
+  background: #C6E4F2;
 }
 
 .partnercontent { 
@@ -214,38 +281,40 @@ nav.topnav li a.active {
   background: transparent;
   color: black; 
   display: inline-block;
+  margin: 20px;
 }
 
 .partnercontent a img{
 	position: relative;
-	height: 430px;
-	width:430px;
+	height: 150px;
+	width:150px;
 	opacity: 0.75;
 }
 
 .readersubs { 
   position: relative; 
-  height: 430px; 
-  width: 430px; 
+  height: 150px; 
+  width: 150px; 
   padding: 2px 10px 2px 10px; 
   margin: 15px 100px 0px auto; 
   display: block; 
   background: transparent;
   color: black; 
   display: inline-block;
+  margin: 20px;
 }
 .readersubs a img{
 	position: relative;
-	height: 430px;
-	width: 430px;
+	height: 150px;
+	width: 150px;
 	opacity: 0.75;
 }
 
 
 .populararticles{ 
   position: relative; 
-  height: 430px; 
-  width: 430px; 
+  height: 150px; 
+  width: 150px; 
   padding: 2px 10px 2px 10px; 
   margin: 15px 100px 0px auto; 
   display: block; 
@@ -253,18 +322,19 @@ nav.topnav li a.active {
   color: black; 
   display: inline-block;
   opacity: 0.75;
+  margin: 20px;
 
 }
 
 .populararticles a img{
 	position: relative;
-	height: 430px;
-	width: 430px;
+	height: 150px;
+	width: 150px;
 	opacity: 0.75;
 }
 
 footer {
-  position: relative; 
+  position: fixed; 
   height: 50px; 
   width: 350px; 
   padding: 5px 5px 5px 5px; 
@@ -275,7 +345,8 @@ footer {
   display: inline-block;
   overflow: hidden;
   opacity: 0.75;
-  box-shadow: 0px 0px 19px 5px #000099FF;
+  box-shadow: 0px 0px 19px 5px #0099FF;
+  top: 0px;
 }
 
 
@@ -365,7 +436,7 @@ nav.topnav li a:hover {
   column-count: 2;
   column-rule-style: solid;
   column-rule-width: 1px;
-  column-rule-color: #000099FF;
+  column-rule-color: #0099FF;
   overflow: hidden;	
   height: auto;
   display: inline-block;
@@ -376,7 +447,7 @@ nav.topnav li a:hover {
   position: relative; 
   left: 2%; 
   height: 550px; 
-  width: 500px; 
+  width: 300px; 
   padding: 15px 15px 15px 15px; 
   margin: 40px 100px 10px auto; 
   display: block; 
@@ -396,7 +467,7 @@ nav.topnav li a:hover {
   column-count: 2;
   column-rule-style: solid;
   column-rule-width: 1px;
-  column-rule-color: #000099FF;
+  column-rule-color: #0099FF;
   overflow: hidden;	
   height: auto;
   display: inline-block;
@@ -416,7 +487,30 @@ nav.topnav li a:hover {
   display: block; 
   color: black; 
   display: inline-block;
+}
 
+.articlecarousel img{
+	width: 400px;
+	height: 300px;
+}
+
+.carouselarticlepage { 
+  position: relative; 
+  left: 600px;
+  top: -410px;
+  bottom: 200px;
+  height: 735px; 
+  width: 260px; 
+  padding: 15px 15px 15px 15px; 
+  margin: 15px 10px 0px auto; 
+  display: block; 
+  color: black; 
+  display: inline-block;
+}
+
+.carouselarticlepage img{
+	width: 400px;
+	height: 300px;
 }
 
 .partnercontent { 
@@ -479,7 +573,10 @@ footer {
   background-color: grey;
   color: white; 
   display: inline-block;
+  margin: 480px auto 0px auto; 
 }
+
+
 
 /* 
 - applies to screens larger than 499px (unless specifically overwritten these styles will also apply to screens larger than 999px)
@@ -561,7 +658,7 @@ nav.topnav li a:hover {
   column-count: 2;
   column-rule-style: solid;
   column-rule-width: 1px;
-  column-rule-color: #000099FF;
+  column-rule-color: #0099FF;
   overflow: hidden;	
   height: 180px;
   display: inline-block;
@@ -592,13 +689,13 @@ nav.topnav li a:hover {
   column-count: 2;
   column-rule-style: solid;
   column-rule-width: 1px;
-  column-rule-color: #000099FF;
+  column-rule-color: #0099FF;
   overflow: hidden;	
   height: 530px;
   display: inline-block;
   top: 425px;
 }
-.carousearticlepage { 
+.carouselarticlepage { 
   position: relative; 
   left: 100px; 
   top: -1000px;  
@@ -609,7 +706,7 @@ nav.topnav li a:hover {
   display: block; 
   border: solid black 1px;
 }
-.carousearticlepage img{
+.carouselarticlepage img{
 	width: 400px;
 	height: 300px;
 }
@@ -733,8 +830,12 @@ footer {
   bottom: 2%; 
   height: 50px; 
   width: 380px; 
-  margin: -36px auto 0px auto; 
+  margin: 360px auto 0px auto; 
   display: block; 
+}
+
+.headline {
+	background-color: white;
 }
 
 
@@ -746,5 +847,5 @@ footer {
 - further decrease size of sections
 - increase size of headings and global fonts
 */
-}
+
 /* END SECOND BREAKPOINT */
