@@ -195,7 +195,7 @@ nav.topnav li a.active {
   height: 680px; 
   width: 433px; 
   padding: 2px 10px 2px 10px; 
-  margin: 15px 100px 200px auto; 
+  margin: 15px 100px 20px auto; 
   display: block; 
   background: #3D3940;
   color: black; 
@@ -214,7 +214,7 @@ nav.topnav li a.active {
   height: 680px; 
   width: 433px; 
   padding: 2px 10px 2px 10px; 
-  margin: 15px 100px 0px auto; 
+  margin: 15px 100px 20px auto; 
   display: block; 
   background: #3D3940;
   color: black; 
@@ -233,7 +233,7 @@ nav.topnav li a.active {
   height: 610px;
   overflow: hidden;
   position: relative;
-  margin-bottom: 500px;
+  margin-bottom: 25px;
 }
 #articles div {
   width: 600px;
@@ -281,40 +281,38 @@ nav.topnav li a.active {
   background: transparent;
   color: black; 
   display: inline-block;
-  margin: 20px;
 }
 
 .partnercontent a img{
 	position: relative;
-	height: 150px;
-	width:150px;
+	height: 430px;
+	width:430px;
 	opacity: 0.75;
 }
 
 .readersubs { 
   position: relative; 
-  height: 150px; 
-  width: 150px; 
+  height: 430px; 
+  width: 430px; 
   padding: 2px 10px 2px 10px; 
   margin: 15px 100px 0px auto; 
   display: block; 
   background: transparent;
   color: black; 
   display: inline-block;
-  margin: 20px;
 }
 .readersubs a img{
 	position: relative;
-	height: 150px;
-	width: 150px;
+	height: 430px;
+	width: 430px;
 	opacity: 0.75;
 }
 
 
 .populararticles{ 
   position: relative; 
-  height: 150px; 
-  width: 150px; 
+  height: 430px; 
+  width: 430px; 
   padding: 2px 10px 2px 10px; 
   margin: 15px 100px 0px auto; 
   display: block; 
@@ -322,19 +320,18 @@ nav.topnav li a.active {
   color: black; 
   display: inline-block;
   opacity: 0.75;
-  margin: 20px;
 
 }
 
 .populararticles a img{
 	position: relative;
-	height: 150px;
-	width: 150px;
+	height: 430px;
+	width: 430px;
 	opacity: 0.75;
 }
 
 footer {
-  position: fixed; 
+  position: relative; 
   height: 50px; 
   width: 350px; 
   padding: 5px 5px 5px 5px; 
@@ -346,7 +343,7 @@ footer {
   overflow: hidden;
   opacity: 0.75;
   box-shadow: 0px 0px 19px 5px #0099FF;
-  top: 0px;
+  bottom: 0px;
 }
 
 
@@ -446,8 +443,8 @@ nav.topnav li a:hover {
 #article { 
   position: relative; 
   left: 2%; 
-  height: 550px; 
-  width: 300px; 
+  height: 750px; 
+  width: 550px; 
   padding: 15px 15px 15px 15px; 
   margin: 40px 100px 10px auto; 
   display: block; 
@@ -481,7 +478,7 @@ nav.topnav li a:hover {
   top: -610px;
   bottom: 200px;
   height: 735px; 
-  width: 260px; 
+  width: 300px; 
   padding: 15px 15px 15px 15px; 
   margin: 15px 10px 0px auto; 
   display: block; 
@@ -490,14 +487,14 @@ nav.topnav li a:hover {
 }
 
 .articlecarousel img{
-	width: 400px;
-	height: 300px;
+	width: 300px;
+	height: 225px;
 }
 
 .carouselarticlepage { 
   position: relative; 
-  left: 600px;
-  top: -410px;
+  left: 650px;
+  top: -810px;
   bottom: 200px;
   height: 735px; 
   width: 260px; 
@@ -509,8 +506,52 @@ nav.topnav li a:hover {
 }
 
 .carouselarticlepage img{
-	width: 400px;
-	height: 300px;
+	width: 260px;
+	height: 225px;
+}
+#articles {
+  width: 260px;
+  height: 620px;
+  overflow: hidden;
+  position: relative;
+
+  margin: 20px auto;
+}
+#articles div {
+  width: 300px;
+  height: 375px;
+
+  position: absolute;
+  top: 0;
+  left: -600px;
+  z-index: 1;
+  opacity: 0;
+
+}
+#articles div:target {
+  left: 0;
+  z-index: 9;
+  opacity: 1;
+}
+#articles div:first-child {
+  left: 0;
+  opacity: 1;
+}
+
+
+
+#divselect{
+	margin-left: 150px;
+}
+#divselect a {
+  text-decoration: none;
+  background: #E3F1FA;
+  border: 1px solid #C6E4F2;
+  padding: 4px 6px;
+  color: #222;
+}
+#divselect a:hover {
+  background: #C6E4F2;
 }
 
 .partnercontent { 
@@ -757,7 +798,7 @@ nav.topnav li a:hover {
 }
 
 
-}
+
 #divselect{
 	margin-left: 150px;
 }
@@ -775,7 +816,7 @@ nav.topnav li a:hover {
 .partnercontent { 
   position: absolute; 
   top: 1030px;
-  left: 30px;
+  left: 10px;
   height: 270px; 
   width: 270px; 
   color: black; 
@@ -793,7 +834,7 @@ nav.topnav li a:hover {
 .readersubs { 
   position: absolute; 
   top:1030px;
-  left: 310px;
+  left: 290px;
   height: 270px; 
   width: 270px; 
   color: black; 
@@ -810,7 +851,7 @@ nav.topnav li a:hover {
 .populararticles{ 
   position: absolute; 
   top: 1030px;
-  left: 590px;
+  left: 570px;
   width: 270px; 
   color: black; 
   height: 270px; 
@@ -830,13 +871,11 @@ footer {
   bottom: 2%; 
   height: 50px; 
   width: 380px; 
-  margin: 360px auto 0px auto; 
+  margin: -600px auto 10px auto; 
   display: block; 
 }
 
-.headline {
-	background-color: white;
-}
+
 
 
 
