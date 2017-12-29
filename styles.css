@@ -196,6 +196,13 @@ nav.topnav li a.active {
 
 }
 
+.populararticles a img{
+	position: relative;
+	height: 430px;
+	width: 430px;
+	opacity: 0.75;
+}
+
 footer {
   position: relative; 
   height: 50px; 
@@ -293,7 +300,7 @@ nav.topnav li a:hover {
   left: 600px;
   top: -400px;
   bottom: 200px;
-  height: 985px; 
+  height: 535px; 
   width: 260px; 
   padding: 15px 15px 15px 15px; 
   margin: 15px 100px 0px auto; 
@@ -306,7 +313,7 @@ nav.topnav li a:hover {
 .partnercontent { 
   position: absolute; 
   top: 715px;
-  left: 20px;
+  left: 30px;
   height: 150px; 
   width: 150px; 
   color: black; 
@@ -314,8 +321,8 @@ nav.topnav li a:hover {
 }
 .partnercontent a img{
 	position: relative;
-	height: 250px;
-	width:250px;
+	height: 150px;
+	width:150px;
 	opacity: 0.75;
 }
 
@@ -324,7 +331,7 @@ nav.topnav li a:hover {
 .readersubs { 
   position: absolute; 
   top: 715px;
-  left: 300px;
+  left: 210px;
   height: 150px; 
   width: 150px; 
   color: black; 
@@ -333,23 +340,22 @@ nav.topnav li a:hover {
 
 .readersubs a img{
 	position: relative;
-	height: 250px;
-	width:250px;
+	height: 150px;
+	width:150px;
 	opacity: 0.75;
 }
 
 .populararticles{ 
   position: absolute; 
-  top: 1015px;
-  left: 30px;
-  height: 300px; 
-  width: 520px; 
+  top: 715px;
+  left: 390px;
+  width: 150px; 
   color: black; 
+  height: 150px; 
   display: inline-block;
-  border: 1px solid red;
 }
 
-.populatarticles a img{
+.populararticles a img{
 	position: relative;
 	height: 150px;
 	width:150px;
@@ -359,7 +365,7 @@ nav.topnav li a:hover {
 footer { 
   position: relative; 
   left: 2%;
-  bottom: 340px;
+  bottom: 360px;
   height: 50px; 
   width: 880px;
   background-color: grey;
@@ -381,22 +387,23 @@ footer {
 
 @media screen and (min-width: 1000px) {
 a.headbanner img{
-	height: 106px;
-	width:460px;
+	height: 175px;
+	width:714px;
 	opacity: 0.75;
+	margin-left: 75px;
 }
 
 img.headlogo{
-	height: 175px;
-	width:175px;
+	height: 200px;
+	width:200px;
 	opacity: 0.75;
 }
 
 a.authorspotlight img{
-	height: 175px;
-	width:175px;
+	height: 200px;
+	width:200px;
 	opacity: 0.75;
-	margin-left: 103px;
+	margin-left: 930px;
 }
 	
 nav.topnav ul {
@@ -422,18 +429,81 @@ nav.topnav li a:hover {
   background-color: #111;
 }
 
+#headlinearticle { 
+  position: relative; 
+  left: 2%; 
+  height: 350px; 
+  width: 800px; 
+  padding: 15px 15px 15px 15px; 
+  margin: 40px 100px 40px auto; 
+  display: block; 
+  color: black; 
+  display: inline-block;
+}
+
+
 .articlecarousel { 
   position: relative; 
-  top: -1px; 
   left: 100px; 
   right: -100px; 
-  bottom: 1px; 
-  height: 500px; 
-  width: 230px; 
+  height: 650px; 
+  width: 400px; 
   padding: 15px 15px 15px 15px; 
-  margin: 40px 100px 0px auto; 
+  margin: -20px 100px 0px auto; 
   display: block; 
   border: solid black 1px;
+}
+
+.partnercontent { 
+  position: absolute; 
+  top: 730px;
+  left: 30px;
+  height: 270px; 
+  width: 270px; 
+  color: black; 
+  display: inline-block;
+}
+.partnercontent a img{
+	position: relative;
+	height: 270px;
+	width:270px;
+	opacity: 0.75;
+}
+
+	
+
+.readersubs { 
+  position: absolute; 
+  top: 730px;
+  left: 310px;
+  height: 270px; 
+  width: 270px; 
+  color: black; 
+  display: inline-block;
+}
+
+.readersubs a img{
+	position: relative;
+	height: 270px;
+	width:270px;
+	opacity: 0.75;
+}
+
+.populararticles{ 
+  position: absolute; 
+  top: 730px;
+  left: 590px;
+  width: 270px; 
+  color: black; 
+  height: 270px; 
+  display: inline-block;
+}
+
+.populararticles a img{
+	position: relative;
+	height: 270px;
+	width:270px;
+	opacity: 0.75;
 }
 
 footer { 
