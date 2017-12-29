@@ -1,7 +1,11 @@
 /* GLOBAL AND MOBILE STYLES FIRST */
+
+/* Uncomment to outline each element for debugging  */
+/*
 * {
   border: 1px solid red; 
 }
+*/
 
 body {
   font-family: Futura, Trebuchet MS, Arial, sans-serif;
@@ -142,39 +146,50 @@ nav.topnav li a.active {
 
 .partnercontent { 
   position: relative; 
-  height: 150px; 
-  width: 433px; 
+  height: 430px; 
+  width: 430px; 
   padding: 2px 10px 2px 10px; 
   margin: 15px 100px 0px auto; 
   display: block; 
-  background: #555059;
+  background: transparent;
   color: black; 
   display: inline-block;
-  opacity: 0.75;
+}
 
+.partnercontent a img{
+	position: relative;
+	height: 430px;
+	width:430px;
+	opacity: 0.75;
 }
 
 .readersubs { 
   position: relative; 
-  height: 150px; 
-  width: 433px; 
+  height: 430px; 
+  width: 430px; 
   padding: 2px 10px 2px 10px; 
   margin: 15px 100px 0px auto; 
   display: block; 
-  background: #7C7482;
+  background: transparent;
   color: black; 
   display: inline-block;
-  opacity: 0.75;
 }
+.readersubs a img{
+	position: relative;
+	height: 430px;
+	width: 430px;
+	opacity: 0.75;
+}
+
 
 .populararticles{ 
   position: relative; 
-  height: 150px; 
-  width: 433px; 
+  height: 430px; 
+  width: 430px; 
   padding: 2px 10px 2px 10px; 
   margin: 15px 100px 0px auto; 
   display: block; 
-  background: #A398AB; 
+  background: transparent; 
   color: black; 
   display: inline-block;
   opacity: 0.75;
@@ -234,7 +249,8 @@ a.authorspotlight img{
 	margin-bottom: 400px;
 	margin-right: 40px;
 }
-	
+
+
 nav.topnav ul {
   list-style-type: none;
   margin: 0;
@@ -277,7 +293,7 @@ nav.topnav li a:hover {
   left: 600px;
   top: -400px;
   bottom: 200px;
-  height: 535px; 
+  height: 985px; 
   width: 260px; 
   padding: 15px 15px 15px 15px; 
   margin: 15px 100px 0px auto; 
@@ -290,39 +306,60 @@ nav.topnav li a:hover {
 .partnercontent { 
   position: absolute; 
   top: 715px;
-  left: 25px;
+  left: 20px;
   height: 150px; 
   width: 150px; 
   color: black; 
   display: inline-block;
-
 }
+.partnercontent a img{
+	position: relative;
+	height: 250px;
+	width:250px;
+	opacity: 0.75;
+}
+
+	
 
 .readersubs { 
   position: absolute; 
   top: 715px;
-  left: 210px;
+  left: 300px;
   height: 150px; 
   width: 150px; 
   color: black; 
   display: inline-block;
 }
 
+.readersubs a img{
+	position: relative;
+	height: 250px;
+	width:250px;
+	opacity: 0.75;
+}
+
 .populararticles{ 
   position: absolute; 
-  top: 715px;
-  left: 390px;
-  height: 150px; 
-  width: 150px; 
+  top: 1015px;
+  left: 30px;
+  height: 300px; 
+  width: 520px; 
   color: black; 
   display: inline-block;
+  border: 1px solid red;
+}
 
+.populatarticles a img{
+	position: relative;
+	height: 150px;
+	width:150px;
+	opacity: 0.75;
 }
 
 footer { 
   position: relative; 
   left: 2%;
-  bottom: 360px;
+  bottom: 340px;
   height: 50px; 
   width: 880px;
   background-color: grey;
